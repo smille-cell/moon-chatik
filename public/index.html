@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Moon Chat</h1>
+        <nav>
+            <ul>
+                <li><a href="#authentication">Login</a></li>
+                <li><a href="#chat">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="authentication">
+            <h2>Authentication</h2>
+            <form id="login-form">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <form id="signup-form">
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <section id="chat" style="display:none;">
+            <div class="sidebar">
+                <h3>Contacts</h3>
+                <ul id="contact-list">
+                    <!-- Contacts will be dynamically added here -->
+                </ul>
+                <button id="settings-btn">Settings</button>
+            </div>
+            <div class="chat-interface">
+                <h2>Chat Room</h2>
+                <div id="messages">
+                    <!-- Messages will be dynamically loaded here -->
+                </div>
+                <input type="text" placeholder="Type your message..." id="message-input">
+                <button id="send-btn">Send</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="settings-modal" style="display:none;">
+        <h2>Settings</h2>
+        <label for="theme">Theme:</label>
+        <select id="theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+        <button id="save-settings-btn">Save</button>
+        <button id="close-settings-btn">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
