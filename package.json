@@ -1,0 +1,1 @@
+{\n  "name": "moon-chatik",\n  "version": "1.0.0",\n  "main": "index.js",\n  "dependencies": {\n    "express": "^4.17.1",\n    "socket.io": "^4.0.0",\n    "mongodb": "^4.0.0"\n  },\n  "scripts": {\n    "start": "node index.js"\n  },\n  "author": "smille-cell",\n  "license": "ISC"\n}
