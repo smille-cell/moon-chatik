@@ -1,0 +1,13 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# npm logs
+npm-debug.log* 
+
+# Other development files
+.DS_Store
+*.log
+*.tmp
